@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D318E7581A9F820200FA1ED7 /* dingdong.wav in Resources */ = {isa = PBXBuildFile; fileRef = D318E7571A9F820200FA1ED7 /* dingdong.wav */; };
+		D318E75A1A9F821300FA1ED7 /* redled.png in Resources */ = {isa = PBXBuildFile; fileRef = D318E7591A9F821300FA1ED7 /* redled.png */; };
+		D318E75C1A9F822200FA1ED7 /* redled_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = D318E75B1A9F822200FA1ED7 /* redled_dark.png */; };
+		D318E75E1A9F823100FA1ED7 /* arduinologo.png in Resources */ = {isa = PBXBuildFile; fileRef = D318E75D1A9F823100FA1ED7 /* arduinologo.png */; };
+		D33A91661A9F577200EF8249 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D33A91651A9F577200EF8249 /* main.m */; };
+		D33A91691A9F577200EF8249 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D33A91681A9F577200EF8249 /* AppDelegate.m */; };
+		D33A916C1A9F577200EF8249 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33A916B1A9F577200EF8249 /* ViewController.m */; };
+		D33A916F1A9F577200EF8249 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D33A916D1A9F577200EF8249 /* Main.storyboard */; };
+		D33A91711A9F577200EF8249 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D33A91701A9F577200EF8249 /* Images.xcassets */; };
+		D33A91741A9F577200EF8249 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D33A91721A9F577200EF8249 /* LaunchScreen.xib */; };
+		D33A91801A9F577200EF8249 /* GolDuinoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D33A917F1A9F577200EF8249 /* GolDuinoTests.m */; };
+		D3CE3A461A9F5FB800E10E57 /* GolDuinoSvcWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CE3A451A9F5FB800E10E57 /* GolDuinoSvcWrapper.m */; };
+		D3CE3A491A9F60B800E10E57 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CE3A481A9F60B800E10E57 /* libsqlite3.dylib */; };
+		D3CE3A4C1A9F613E00E10E57 /* GolgiStuff.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CE3A4B1A9F613E00E10E57 /* GolgiStuff.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D33A917A1A9F577200EF8249 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D33A91581A9F577200EF8249 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D33A915F1A9F577200EF8249;
+			remoteInfo = GolDuino;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D318E7571A9F820200FA1ED7 /* dingdong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dingdong.wav; sourceTree = "<group>"; };
+		D318E7591A9F821300FA1ED7 /* redled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redled.png; sourceTree = "<group>"; };
+		D318E75B1A9F822200FA1ED7 /* redled_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redled_dark.png; sourceTree = "<group>"; };
+		D318E75D1A9F823100FA1ED7 /* arduinologo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arduinologo.png; sourceTree = "<group>"; };
+		D33A91601A9F577200EF8249 /* GolDuino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GolDuino.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D33A91641A9F577200EF8249 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D33A91651A9F577200EF8249 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D33A91671A9F577200EF8249 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D33A91681A9F577200EF8249 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D33A916A1A9F577200EF8249 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D33A916B1A9F577200EF8249 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D33A916E1A9F577200EF8249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D33A91701A9F577200EF8249 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D33A91731A9F577200EF8249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D33A91791A9F577200EF8249 /* GolDuinoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GolDuinoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D33A917E1A9F577200EF8249 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D33A917F1A9F577200EF8249 /* GolDuinoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GolDuinoTests.m; sourceTree = "<group>"; };
+		D3CE3A441A9F5FB800E10E57 /* GolDuinoSvcWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GolDuinoSvcWrapper.h; sourceTree = "<group>"; };
+		D3CE3A451A9F5FB800E10E57 /* GolDuinoSvcWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GolDuinoSvcWrapper.m; sourceTree = "<group>"; };
+		D3CE3A471A9F601A00E10E57 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		D3CE3A481A9F60B800E10E57 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		D3CE3A4A1A9F613E00E10E57 /* GolgiStuff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GolgiStuff.h; sourceTree = "<group>"; };
+		D3CE3A4B1A9F613E00E10E57 /* GolgiStuff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GolgiStuff.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D33A915D1A9F577200EF8249 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3CE3A491A9F60B800E10E57 /* libsqlite3.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D33A91761A9F577200EF8249 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D33A91571A9F577200EF8249 = {
+			isa = PBXGroup;
+			children = (
+				D3CE3A481A9F60B800E10E57 /* libsqlite3.dylib */,
+				D3CE3A471A9F601A00E10E57 /* Config.xcconfig */,
+				D33A91621A9F577200EF8249 /* GolDuino */,
+				D33A917C1A9F577200EF8249 /* GolDuinoTests */,
+				D33A91611A9F577200EF8249 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D33A91611A9F577200EF8249 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D33A91601A9F577200EF8249 /* GolDuino.app */,
+				D33A91791A9F577200EF8249 /* GolDuinoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D33A91621A9F577200EF8249 /* GolDuino */ = {
+			isa = PBXGroup;
+			children = (
+				D318E75D1A9F823100FA1ED7 /* arduinologo.png */,
+				D318E75B1A9F822200FA1ED7 /* redled_dark.png */,
+				D318E7591A9F821300FA1ED7 /* redled.png */,
+				D318E7571A9F820200FA1ED7 /* dingdong.wav */,
+				D3CE3A4A1A9F613E00E10E57 /* GolgiStuff.h */,
+				D3CE3A4B1A9F613E00E10E57 /* GolgiStuff.m */,
+				D33A91671A9F577200EF8249 /* AppDelegate.h */,
+				D33A91681A9F577200EF8249 /* AppDelegate.m */,
+				D33A916A1A9F577200EF8249 /* ViewController.h */,
+				D33A916B1A9F577200EF8249 /* ViewController.m */,
+				D33A916D1A9F577200EF8249 /* Main.storyboard */,
+				D33A91701A9F577200EF8249 /* Images.xcassets */,
+				D33A91721A9F577200EF8249 /* LaunchScreen.xib */,
+				D33A91631A9F577200EF8249 /* Supporting Files */,
+				D3CE3A441A9F5FB800E10E57 /* GolDuinoSvcWrapper.h */,
+				D3CE3A451A9F5FB800E10E57 /* GolDuinoSvcWrapper.m */,
+			);
+			path = GolDuino;
+			sourceTree = "<group>";
+		};
+		D33A91631A9F577200EF8249 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D33A91641A9F577200EF8249 /* Info.plist */,
+				D33A91651A9F577200EF8249 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D33A917C1A9F577200EF8249 /* GolDuinoTests */ = {
+			isa = PBXGroup;
+			children = (
+				D33A917F1A9F577200EF8249 /* GolDuinoTests.m */,
+				D33A917D1A9F577200EF8249 /* Supporting Files */,
+			);
+			path = GolDuinoTests;
+			sourceTree = "<group>";
+		};
+		D33A917D1A9F577200EF8249 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D33A917E1A9F577200EF8249 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D33A915F1A9F577200EF8249 /* GolDuino */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D33A91831A9F577200EF8249 /* Build configuration list for PBXNativeTarget "GolDuino" */;
+			buildPhases = (
+				D33A91891A9F5E9400EF8249 /* ShellScript */,
+				D33A915C1A9F577200EF8249 /* Sources */,
+				D33A915D1A9F577200EF8249 /* Frameworks */,
+				D33A915E1A9F577200EF8249 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GolDuino;
+			productName = GolDuino;
+			productReference = D33A91601A9F577200EF8249 /* GolDuino.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D33A91781A9F577200EF8249 /* GolDuinoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D33A91861A9F577200EF8249 /* Build configuration list for PBXNativeTarget "GolDuinoTests" */;
+			buildPhases = (
+				D33A91751A9F577200EF8249 /* Sources */,
+				D33A91761A9F577200EF8249 /* Frameworks */,
+				D33A91771A9F577200EF8249 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D33A917B1A9F577200EF8249 /* PBXTargetDependency */,
+			);
+			name = GolDuinoTests;
+			productName = GolDuinoTests;
+			productReference = D33A91791A9F577200EF8249 /* GolDuinoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D33A91581A9F577200EF8249 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Golgi;
+				TargetAttributes = {
+					D33A915F1A9F577200EF8249 = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = CJ62T3H7T2;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					D33A91781A9F577200EF8249 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = D33A915F1A9F577200EF8249;
+					};
+				};
+			};
+			buildConfigurationList = D33A915B1A9F577200EF8249 /* Build configuration list for PBXProject "GolDuino" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D33A91571A9F577200EF8249;
+			productRefGroup = D33A91611A9F577200EF8249 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D33A915F1A9F577200EF8249 /* GolDuino */,
+				D33A91781A9F577200EF8249 /* GolDuinoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D33A915E1A9F577200EF8249 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D33A916F1A9F577200EF8249 /* Main.storyboard in Resources */,
+				D318E7581A9F820200FA1ED7 /* dingdong.wav in Resources */,
+				D33A91741A9F577200EF8249 /* LaunchScreen.xib in Resources */,
+				D33A91711A9F577200EF8249 /* Images.xcassets in Resources */,
+				D318E75E1A9F823100FA1ED7 /* arduinologo.png in Resources */,
+				D318E75C1A9F822200FA1ED7 /* redled_dark.png in Resources */,
+				D318E75A1A9F821300FA1ED7 /* redled.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D33A91771A9F577200EF8249 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D33A91891A9F5E9400EF8249 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#\n# GOLGI_WORK_DIR: Where the golgi_gen script will copied to run\n# GOLGI_PKG_DIR: The Golgi Package install directory\n# GOLGI_LIB_DIR: Where the Golgi runtime libraries whould be put\n#\n\nGOLGI_WORK_DIR=\"$PROJECT_DIR/$PROJECT_NAME\"\nGOLGI_PKG_DIR=\"$HOME/Golgi-Pkg/LATEST\"\nGOLGI_HDR_DIR=\"$PROJECT_DIR/$PROJECT_NAME\"\nGOLGI_LIB_DIR=\"$PROJECT_DIR/$PROJECT_NAME\"\n\n#\n# Copy Thrift file(s) into place (if necessary)\n#\n\ncp -f \"$PROJECT_DIR/../../GolDuino.thrift\" \"$GOLGI_WORK_DIR\"\n\n#\n# Create the GOLGI_KEYS.h file containing\n# the Developer key and the application key\n#\n\nDEVKEY=`cat \"$PROJECT_DIR/../../Golgi.DevKey\"`\nAPPKEY=`cat \"$PROJECT_DIR/../../Golgi.AppKey\"`\necho \"#define GOLGI_DEV_KEY @\\\"$DEVKEY\\\"\" >\"$GOLGI_WORK_DIR/GOLGI_KEYS.h\"\necho \"#define GOLGI_APP_KEY @\\\"$APPKEY\\\"\" >>\"$GOLGI_WORK_DIR/GOLGI_KEYS.h\"\n\n\n. \"$GOLGI_PKG_DIR/iOS/golgi_gen.sh\"\n\n#\n# Remove the thrift file because the canonical source is elsewhere\n#\n\nrm -f \"$GOLGI_WORK_DIR/GolDuino.thrift\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D33A915C1A9F577200EF8249 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D33A916C1A9F577200EF8249 /* ViewController.m in Sources */,
+				D3CE3A4C1A9F613E00E10E57 /* GolgiStuff.m in Sources */,
+				D3CE3A461A9F5FB800E10E57 /* GolDuinoSvcWrapper.m in Sources */,
+				D33A91691A9F577200EF8249 /* AppDelegate.m in Sources */,
+				D33A91661A9F577200EF8249 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D33A91751A9F577200EF8249 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D33A91801A9F577200EF8249 /* GolDuinoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D33A917B1A9F577200EF8249 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D33A915F1A9F577200EF8249 /* GolDuino */;
+			targetProxy = D33A917A1A9F577200EF8249 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D33A916D1A9F577200EF8249 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D33A916E1A9F577200EF8249 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D33A91721A9F577200EF8249 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D33A91731A9F577200EF8249 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D33A91811A9F577200EF8249 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3CE3A471A9F601A00E10E57 /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D33A91821A9F577200EF8249 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3CE3A471A9F601A00E10E57 /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D33A91841A9F577200EF8249 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = GolDuino/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D33A91851A9F577200EF8249 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = GolDuino/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		D33A91871A9F577200EF8249 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GolDuinoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GolDuino.app/GolDuino";
+			};
+			name = Debug;
+		};
+		D33A91881A9F577200EF8249 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GolDuinoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GolDuino.app/GolDuino";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D33A915B1A9F577200EF8249 /* Build configuration list for PBXProject "GolDuino" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D33A91811A9F577200EF8249 /* Debug */,
+				D33A91821A9F577200EF8249 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D33A91831A9F577200EF8249 /* Build configuration list for PBXNativeTarget "GolDuino" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D33A91841A9F577200EF8249 /* Debug */,
+				D33A91851A9F577200EF8249 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D33A91861A9F577200EF8249 /* Build configuration list for PBXNativeTarget "GolDuinoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D33A91871A9F577200EF8249 /* Debug */,
+				D33A91881A9F577200EF8249 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D33A91581A9F577200EF8249 /* Project object */;
+}

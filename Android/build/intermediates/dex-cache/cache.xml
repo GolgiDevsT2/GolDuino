@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/brian/Documents/Development/GolDuino/Android/app/build/intermediates/exploded-aar/golgi-support/2.5.4/classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="8008d2cc1e32d72d6c56c174b17177fdacaff311">
+        <dex dex="/Users/brian/Documents/Development/GolDuino/Android/app/build/intermediates/pre-dexed/debug/classes-775ea27dab63678232a88db4b5cfd6e609ba9512.jar" />
+    </item>
+    <item
+        jar="/Users/brian/AndroidSDK/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/Users/brian/Documents/Development/GolDuino/Android/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-50b588efd7a9fbd344ead9bbfcc70ad4451997e2.jar" />
+    </item>
+    <item
+        jar="/Users/brian/Documents/Development/GolDuino/Android/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/Users/brian/Documents/Development/GolDuino/Android/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-feda88ae52863c5ae33d2df81f532bef47db89da.jar" />
+    </item>
+    <item
+        jar="/Users/brian/Documents/Development/GolDuino/Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="dd9247ea0fabe8ee479638c4b4a23e93752be256">
+        <dex dex="/Users/brian/Documents/Development/GolDuino/Android/app/build/intermediates/pre-dexed/debug/classes-f7e29be89961c8cf7c2c1f5a0b24499e55507b4b.jar" />
+    </item>
+    <item
+        jar="/Users/brian/Documents/Development/GolDuino/Android/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/Users/brian/Documents/Development/GolDuino/Android/app/build/intermediates/pre-dexed/debug/classes-bcbdd993f0ec27f53c48aaf7e68a51043775c1aa.jar" />
+    </item>
+    <item
+        jar="/Users/brian/Documents/Development/GolDuino/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/Users/brian/Documents/Development/GolDuino/Android/app/build/intermediates/pre-dexed/debug/classes-efd1793bb9cff86e9f28cfbf631900ba6b3b3acc.jar" />
+    </item>
+
+</items>

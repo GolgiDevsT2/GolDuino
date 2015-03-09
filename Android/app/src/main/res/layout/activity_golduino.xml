@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GolduinoActivity"
+    android:background="@drawable/arduinologo">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true">
+
+        <FrameLayout
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:background="#eee"
+            android:layout_marginBottom="30dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView"
+                android:src="@drawable/signal_meter" />
+            <view
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                class="io.golgi.golduino.SignalMeter"
+                android:id="@+id/signalMeter"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="20dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/ledOffIv"
+                android:src="@drawable/redled_dark" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/ledOnIv"
+                android:src="@drawable/redled" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/switch1" />
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/spinnerView"
+                android:layout_centerInParent="true" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

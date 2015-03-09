@@ -1,0 +1,42 @@
+apply plugin: 'com.android.application'
+
+project.ext {
+    GOLGI_DIR = "$System.env.HOME" + '/Golgi-Pkg/LATEST/'
+    GOLGI_THRIFT_FILE = "../../GolDuino.thrift"
+    GOLGI_DEV_KEY_FILE = "../../Golgi.DevKey"
+    GOLGI_APP_KEY_FILE = "../../Golgi.AppKey"
+    GOLGI_GEN_DIR = "src/main/java/io/golgi/golduino/gen"
+    GOLGI_GEN_PKG = "io.golgi.golduino.gen"
+}
+
+apply from: project.GOLGI_DIR + '/Android/golgi.gradle'
+
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.1"
+
+    defaultConfig {
+        applicationId "io.golgi.golduino"
+        minSdkVersion 15
+        targetSdkVersion 21
+        versionCode 10000
+        versionName "1.00.00"
+        versionName "9.99.99"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.google.android.gms:play-services:6.5.87'
+    compile project.GOLGI_AAR
+
+}
