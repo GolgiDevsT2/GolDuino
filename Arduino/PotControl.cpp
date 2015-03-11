@@ -67,7 +67,7 @@ void potService(void)
     int now = millis() / 250;
     if(now != lastCheck){
         lastCheck = now;
-        int val = analogRead(0);
+        int val = analogRead(POT_INPUT);
         if(val != potValue){
             int diff = val - potValue;
             if(diff > 50 || diff < -50 || val == 0 || val >= 1023){
