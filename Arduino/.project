@@ -40,9 +40,14 @@
 	</natures>
 	<linkedResources>
 		<link>
-			<name>Libraries/WiFi</name>
+			<name>Libraries/Ethernet</name>
 			<type>2</type>
-			<locationURI>ArduinoLibPath/WiFi</locationURI>
+			<locationURI>ArduinoLibPath/Ethernet</locationURI>
+		</link>
+		<link>
+			<name>Libraries/SPI</name>
+			<type>2</type>
+			<locationURI>ArduinoHardwareLibPath/SPI</locationURI>
 		</link>
 		<link>
 			<name>arduino/core</name>
@@ -58,15 +63,15 @@
 	<variableList>
 		<variable>
 			<name>ArduinoHardwareLibPath</name>
-			<value>file:/Users/brian/Downloads/Arduino-1.5.8.app/Contents/Resources/Java/hardware/arduino/sam/libraries</value>
+			<value>file:/Users/brian/Downloads/Arduino-4-Eclipse.app/Contents/Resources/Java/hardware/arduino/sam/libraries</value>
 		</variable>
 		<variable>
 			<name>ArduinoPinPath</name>
-			<value>file:/Users/brian/Downloads/Arduino-1.5.8.app/Contents/Resources/Java/hardware/arduino/sam/variants</value>
+			<value>file:/Users/brian/Downloads/Arduino-4-Eclipse.app/Contents/Resources/Java/hardware/arduino/sam/variants</value>
 		</variable>
 		<variable>
 			<name>ArduinoPlatformPath</name>
-			<value>file:/Users/brian/Downloads/Arduino-1.5.8.app/Contents/Resources/Java/hardware/arduino/sam</value>
+			<value>file:/Users/brian/Downloads/Arduino-4-Eclipse.app/Contents/Resources/Java/hardware/arduino/sam</value>
 		</variable>
 	</variableList>
 </projectDescription>
