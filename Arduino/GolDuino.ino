@@ -1,5 +1,5 @@
-#define ETHERNET 0
-#define WIFI     1
+#define ETHERNET 1
+#define WIFI     0
 
 #include <GolDuino.h>
 #include <libgolgi.h>
@@ -30,7 +30,7 @@ char pass[] = "PASSWORD_OF_YOUR_NETWORK";    // your network password
 
  */
 
-#include "../../WIFI_PARAMS.h"
+// #include "../../WIFI_PARAMS.h"
 
 #endif
 
