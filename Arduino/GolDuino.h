@@ -3,7 +3,7 @@
 
 #define BUTTON_PIN  2
 #define LED_PIN     8
-#define BUZZ_PIN    6
+#define POT_INPUT	0
 
 extern void setHandsetId(const char *id);
 extern const char *getHandsetId(void);
