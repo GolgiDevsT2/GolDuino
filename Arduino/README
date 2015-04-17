@@ -1,0 +1,41 @@
+How To Build On OS X, Linux and Windows in the Arduino
+IDE (at least version 1.6.3).
+
+OS X/Linux
+ o Install the latest version of the Golgi SDK somewhere (on OS X it will
+   go under ~/Golgi-Pkg)
+
+ o In the developer portal at devs.golgi.io, create a new application, call
+   it GolDuino
+
+ o In your IDE sketchbook location, create a directory called GolDuino
+
+    $ mkdir <path-to-sketchbook-location>/GolDuino
+
+ o Copy everything from this directory to that directory
+
+    $ cp <path-to-this-directory>/* <path-to-sketchbook-location>/GolDuino
+
+ o Change directory to the newly created directory
+
+    $ cd <path-to-sketchbook-location>/GolDuino
+
+ o Generate the needed files by invoking the tool to create them:
+
+    $ <path-to-golgi-pkg>/LATEST/Arduino/golgen.sh <developer-key-from-portal> <application-key-from-portal> <path-to-root-GolDuino-directory-from-GitHub>/GolDuino.thrift GolgiGen
+
+ o Decide which transport you want to use (Ethernet/WiFi/Serial/SMS) and
+   import the appropriate library into the IDE by going to Sketch/Include Library/Add .ZIP Library
+
+ o Navigate to the Golgi-Pkg install directory, select LATEST/Arduino and
+   pick the appropriate library for your transport.
+
+ o Edit the GolgiNet.cpp file and set the appropriate #define to 1 (for
+   Ethernet, WiFi, Serial or SMS). If you are using WiFi or SMS, make sure
+   you define the extra params needed. See the source for details.
+
+ o Build the sketch and install it.
+
+  
+Windows
+  o [COMING SOON]
