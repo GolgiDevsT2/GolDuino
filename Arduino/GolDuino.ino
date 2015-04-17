@@ -1,22 +1,3 @@
-<<<<<<< HEAD
-=======
-#define ETHERNET 1
-#define WIFI     0
->>>>>>> ada3e4b444f776821c466c9ac9e7a9265694791c
-
-#include <SPI.h>
-
-<<<<<<< HEAD
-#include <WiFi.h>
-#include <WiFiClient.h>
-#include <WiFiServer.h>
-#include <WiFiUdp.h>
-=======
-// #include "../../WIFI_PARAMS.h"
->>>>>>> ada3e4b444f776821c466c9ac9e7a9265694791c
-
-#include <libgolgi.h>
-
 #include "GolDuino.h"
 #include <libgolgi.h>
 
