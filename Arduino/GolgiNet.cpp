@@ -7,6 +7,7 @@
 #include <Arduino.h>
 #include <libgolgi.h>
 #include "GolgiNet.h"
+#include "GOLGI_KEYS.h"
 
 #define ETHERNET    0
 #define WIFI        0
@@ -145,7 +146,7 @@ public:
     void begin(void){
         Serial1.begin(19200);
         gsm_init((char *)GOLGI_DEVKEY,
-		 (char *)GOLGI_APPKEY);
+                 (char *)GOLGI_APPKEY);
         gsm_modem_init(SMS_NUMBER);
     };
 
