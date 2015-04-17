@@ -6,8 +6,8 @@
  */
 
 #include <Arduino.h>
-#include <GolDuino.h>
-#include <ButtonControl.h>
+#include "GolDuino.h"
+#include "ButtonControl.h"
 
 static int buttonState = 0;
 static int oldButtonState = -1;
@@ -78,13 +78,13 @@ void sendButtonState(void){
         Serial.println("We don't know the ID of the phone yet");
     }
     else if(buttonState != 0){
-        downTime = millis();
-        GolDuino_buttonPressed_reqArg *arg = new GolDuino_buttonPressed_reqArg();
-        arg->setT((int)0);
-        Serial.println("Send to " + String(id));
-        GolDuinoButtonPressed_sendTo(new ButtonPressedResultReceiver(), id, arg);
+        // downTime = millis();
+        // GolDuino_buttonPressed_reqArg *arg = new GolDuino_buttonPressed_reqArg();
+        // arg->setT((int)0);
+        // Serial.println("Send to " + String(id));
+        // GolDuinoButtonPressed_sendTo(new ButtonPressedResultReceiver(), id, arg);
 
-        delete arg;
+        // delete arg;
     }
     else{
         int elapsed = (int)(millis() - downTime);

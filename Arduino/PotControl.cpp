@@ -6,11 +6,14 @@
  */
 
 #include <Arduino.h>
-#include <GolDuino.h>
-#include <PotControl.h>
+
+#include "GolDuino.h"
+#include "PotControl.h"
 
 static int potValue = -1;
 static int lastCheck = 0;
+static int inFlight = 0;
+static int sendPending = 0;
 
 class SetPotValueResultReceiver: public GolDuinoSetPotValueResultReceiver{
 public:
@@ -20,6 +23,7 @@ public:
     void errorWithGolgiException(GolgiException *golgiException);
 };
 
+void sendPotValueWorker(void);
 
 SetPotValueResultReceiver::SetPotValueResultReceiver(void){
 
@@ -27,16 +31,34 @@ SetPotValueResultReceiver::SetPotValueResultReceiver(void){
 
 void SetPotValueResultReceiver::success(void){
     // Serial.println("setPotValue: SUCCESS");
+    inFlight--;
+    if(sendPending){
+        sendPotValueWorker();
+    }
     delete this;
 }
 
 void SetPotValueResultReceiver::errorWithGolgiException(GolgiException *gex){
     Serial.println("setPotValue: FAILURE(" + String(gex->getErrType()) + "/" + String(gex->getErrText()));
+    inFlight--;
+    if(sendPending){
+        sendPotValueWorker();
+    }
+
     delete this;
 }
 
 SetPotValueResultReceiver::~SetPotValueResultReceiver(void){
-    Serial.println("Bye Bye result receiver");
+}
+
+void sendPotValueWorker(void)
+{
+    GolDuino_setPotValue_reqArg *arg = new GolDuino_setPotValue_reqArg();
+    arg->setV(potValue);
+    inFlight++;
+    sendPending = 0;
+    GolDuinoSetPotValue_sendTo(new SetPotValueResultReceiver(), getHandsetId(), arg);
+    delete arg;
 }
 
 void sendPotValue(void){
@@ -44,15 +66,13 @@ void sendPotValue(void){
     if(id == NULL){
         Serial.println("We don't know the ID of the phone yet");
     }
+    else if(inFlight < 1){
+        sendPotValueWorker();
+    }
     else{
-        GolDuino_setPotValue_reqArg *arg = new GolDuino_setPotValue_reqArg();
-        arg->setV(potValue);
-        GolDuinoSetPotValue_sendTo(new SetPotValueResultReceiver(), id, arg);
-        delete arg;
+        sendPending = 1;
     }
 }
-
-
 
 void potSetup(void)
 {
