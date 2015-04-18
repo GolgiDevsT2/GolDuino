@@ -41,15 +41,6 @@ void golgiSetup()
     (new LEDControl())->registerReceivers();
 }
 
-//The setup function is called once at startup of the sketch
-void _setup()
-{
-    Serial.begin(115200);
-    SerialUSB.begin(115200);
-    SerialUSB.println("Mary Had A Little Lamb");
-}
-
-
 void setup()
 {
     Serial.begin(115200);
@@ -76,15 +67,6 @@ void setup()
 
 long prev = 0;
 long prev1 = 0;
-
-// The loop function is called in an endless loop
-void _loop()
-{
-    delay(1000);
-    SerialUSB.println("Scooby Dooby Doo");
-    Serial.println("<BARK>");
-
-}
 
 void loop()
 {
