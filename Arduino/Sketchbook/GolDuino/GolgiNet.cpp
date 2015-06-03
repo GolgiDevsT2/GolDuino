@@ -12,8 +12,8 @@
 
 
 #define ETHERNET    0
-#define WIFI        1
-#define SERIALIF    0
+#define WIFI        0
+#define SERIALIF    1
 #define SMS         0
 
 
@@ -131,18 +131,18 @@ class SerialIF : public GolgiSerialInterface
 public:
     void begin(void){
         pinMode(19, INPUT_PULLUP);
-        Serial1.begin(38400);
+        Serial1.begin(9600);
     };
 
-    int available(void){
+    int32_t available(void){
         return Serial1.available();
     };
 
-    void write(const uint8_t *data, int len){
+    void write(const uint8_t *data, int32_t len){
         Serial1.write(data, len);
     };
 
-    int readBytes(char *buf, int max){
+    int32_t readBytes(char *buf, int32_t max){
         return Serial1.readBytes(buf, max);
     };
 
